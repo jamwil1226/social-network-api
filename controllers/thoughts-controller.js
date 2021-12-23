@@ -1,5 +1,4 @@
 const { Thoughts, Users } = require('../models');
-// const { db } = require('../models/Users');
 
 const thoughtsController = {
     // get all thoughts
@@ -92,7 +91,7 @@ const thoughtsController = {
 
     //delete reactions
     deleteReactions({ params }, res) {
-      Thoughts.findOneAndUpdate({ _id: params.thoughtsId }, body, {new: true})
+      Thoughts.findOneAndUpdate({ _id: params.thoughtsId }, {$pull: {reactions: {reactionId: params.reactionId}}}, {new: true})
       .then(dbThoughtsData => {
           if (!dbThoughtsData) {
           res.status(404).json({ message: 'No reaction found with this id!' });

@@ -27,12 +27,12 @@ router
   .route('/:userId')
   .post(createThoughts);
 
-// /api/thoughts/:id/reactions
+// /api/thoughts/:thoughtsid/reactions
 router
   .route('/:thoughtId/reactions')
-  .post(addReactions);
+  .post(addReactions)
 
-// /api/thoughts/id/reactionId
+// /api/thoughts/:thoughtsId/reactionId
 router
   .route('/:thoughtId/reactions/:reactionId')
   .delete(deleteReactions);
