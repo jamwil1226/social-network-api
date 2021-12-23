@@ -12,6 +12,7 @@
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Walkthrough](#walkthrough)
 * [License](#license)
 * [Contributor](#contributor)
 
@@ -78,7 +79,9 @@ You will see the reaction when you pull up the thought by ID.
 
 ![confirm reaction](./assets/images/confirm-reaction.png)
 
-
+## Walkthrough
+Click here for a video walkthrough of my app.
+https://watch.screencastify.com/v/2DKAjabrd7H19D3ZiyDJ
 
 
 
